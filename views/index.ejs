@@ -1,7 +1,33 @@
 <% layout('layouts/boilerplate') -%>
 <!-- HEADER -->
 <%- include('./partials/Header'); -%>
-<section id="main-container" style="position: relative;">
-<h1>HELLO WORLD!</h1>
+
+<section id="main-content" style="position: relative;">
+<!-- <canvas id="canvas-basic" style="z-index: -1;" width="644" height="637"></canvas> -->
+<div>
+<h1>Search for a lovely location</h1>
+</div>
+
+
+<!-- form for picture request -->
+<form action="/spacewatch" method="GET">
+<label for="location-name">Location Name</label>
+<input type="text">
+<label for="Longitude">Longitude</label>
+<input type="text">
+<label for="Latitude">Latitude</label>
+<input type="text">
+<br>
+<button type="submit">Get your Space Picture.</button>
+</form>
+
+<br>
+<!-- image container -->
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
 </section>
 
